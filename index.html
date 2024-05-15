@@ -1,0 +1,112 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bigboy">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Please take the following survey your time is appreciated
+      </p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label"
+            >Name<input id="name" type="text" placeholder="name" required
+          /></label>
+          <label id="email-label"
+            >Email<input id="email" type="email" placeholder="email" required
+          /></label>
+          <label id="number-label"
+            >Age(optional)<input
+              id="number"
+              type="number"
+              min="13"
+              max="90"
+              placeholder="age"
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <label
+            >Which option best describes your current skill level?
+            <select id="dropdown">
+              <option>Select Option</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+              <option>Professional</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label
+            >What best describes your interaction with Web Development?</label
+          >
+          <label for="web-dev-exprience"
+            ><input
+              type="radio"
+              value="1"
+              name="web-dev-experience"
+            />Easy</label
+          >
+          <label for="web-dev-exprience"
+            ><input
+              type="radio"
+              value="2"
+              name="web-dev-experience"
+            />Fun</label
+          >
+          <label for="web-dev-exprience"
+            ><input
+              type="radio"
+              value="3"
+              name="web-dev-experience"
+            />Overwhelming</label
+          >
+          <label for="web-dev-exprience"
+            ><input
+              type="radio"
+              value="4"
+              name="web-dev-experience"
+            />Scary</label
+          >
+        </fieldset>
+        <fieldset>
+          <label for="feedback"
+            >Any feedback or suggestions on how we could
+            improve your experience?
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="3"
+              cols="23"
+              placeholder="Add comment here..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <fieldset class="check">
+          <label for="terms and conditions"
+            >I have read the
+            <a href="https://www.freecodecamp.org/news/terms-of-service/"
+              >terms and conditions</a
+            ><input
+              id="terms-and-conditions"
+              type="checkbox"
+              required
+              name="terms-and-conditions"
+            />
+            </label>
+
+          <label for="agreement"
+            >I accept the terms and conditions <input id="agreement" type="checkbox" value="agreement"
+          /></label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
